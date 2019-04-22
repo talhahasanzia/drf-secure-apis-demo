@@ -1,7 +1,7 @@
-"""oauth_django URL Configuration
+"""django_rest_framework URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/2.1/topics/http/urls/
+    https://docs.djangoproject.com/en/2.2/topics/http/urls/
 Examples:
 Function views
     1. Add an import:  from my_app import views
@@ -16,11 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-from posts_app.views import PostAPI
-
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('o/', include('oauth2_provider.urls', namespace='oauth2_provider')),
     path('auth/', include('authentication.urls')),
-    path('posts/', PostAPI.as_view(), name="posts"),
+    path('posts/', include('posts_app.urls')),
+
 ]

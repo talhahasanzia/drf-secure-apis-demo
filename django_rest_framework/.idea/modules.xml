@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/oauth_django.iml" filepath="$PROJECT_DIR$/.idea/oauth_django.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/django_rest_framework.iml" filepath="$PROJECT_DIR$/.idea/django_rest_framework.iml" />
     </modules>
   </component>
 </project>
